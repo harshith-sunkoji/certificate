@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author  Matty
+% Based on httpsgithub.comjakegutresume (which was itself based on httpsgithub.comsb2novresume)
+% License  MIT
+%------------------------
+
+documentclass[letterpaper,11pt]{article}
+
+usepackage{latexsym}
+usepackage[empty]{fullpage}
+usepackage{titlesec}
+usepackage{marvosym}
+usepackage[usenames,dvipsnames]{color}
+usepackage{verbatim}
+usepackage{enumitem}
+usepackage[hidelinks]{hyperref}
+usepackage{fancyhdr}
+usepackage[english]{babel}
+usepackage{tabularx}
+usepackage{xcolor}
+usepackage{fontawesome5}
+
+input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% usepackage[sfdefault]{roboto}
+% usepackage[sfdefault]{noto-sans}
+% serif
+% usepackage{charter}
+
+pagestyle{fancy}
+fancyhf{} % clear all header and footer fields
+fancyfoot{}
+renewcommand{headrulewidth}{0pt}
+renewcommand{footrulewidth}{0pt}
+
+% Adjust margins
+addtolength{oddsidemargin}{-0.5in}
+addtolength{evensidemargin}{-0.5in}
+addtolength{textwidth}{1in}
+addtolength{topmargin}{-1in} % Default was -.5in
+addtolength{textheight}{1.0in}
+
+urlstyle{same}
+
+raggedbottom
+raggedright
+setlength{tabcolsep}{0in}
+
+% Section formatting
+titleformat{section}{
+  vspace{-5pt}scshaperaggedrightlarge
+}{}{0em}{}[color{black}titlerule vspace{-5pt}]
+
+% Subsection formatting
+titleformat{subsection}{
+  vspace{-4pt}scshaperaggedrightlarge
+}{hspace{-.15in}}{0em}{}[color{black}vspace{-8pt}]
+
+% Ensure that generate pdf is machine readableATS parsable
+pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+newcommand{resumeItem}[1]{
+  itemsmall{
+    {#1 vspace{-2pt}}
+  }
+}
+
+newcommand{resumeSubheading}[4]{
+  vspace{-2pt}item
+    begin{tabular}{0.97textwidth}[t]{l@{extracolsep{fill}}r}
+      textbf{#1} & #2 
+      textit{small#3} & textit{small #4} 
+    end{tabular}vspace{-7pt}
+}
+
+newcommand{resumeSubSubheading}[2]{
+    item
+    begin{tabular}{0.97textwidth}{l@{extracolsep{fill}}r}
+      textit{small#1} & textit{small #2} 
+    end{tabular}vspace{-7pt}
+}
+
+newcommand{resumeProjectHeading}[2]{
+    item
+    begin{tabular}{0.97textwidth}{l@{extracolsep{fill}}r}
+      small#1 & #2 
+    end{tabular}vspace{-7pt}
+}
+
+newcommand{resumeSubItem}[1]{resumeItem{#1}vspace{-4pt}}
+newcommand{resumeSubHeadingListStart}{begin{itemize}[leftmargin=0.15in, label={}]}
+newcommand{resumeSubHeadingListEnd}{end{itemize}}
+newcommand{resumeItemListStart}{begin{itemize}}
+newcommand{resumeItemListEnd}{end{itemize}vspace{-5pt}}
+
+renewcommandlabelitemii{$vcenter{hbox{tiny$bullet$}}$}
+
+setlength{footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+begin{document}
+
+% -------------------- HEADING--------------------
+begin{flushright}
+  % vspace{-4pt}
+  color{gray}
+  item
+  Last Updated on January 12th, 2024
+end{flushright}
+
+vspace{-5pt}
+
+begin{center}
+    textbf{Huge scshape SRI HARSHITH SUNKOJI}  vspace{8pt}
+    small 
+    faIcon{github}
+    href{httpsgithub.comharshith-sunkoji}{underline{github.comharshith-sunkoji}} $  $
+    faIcon{phone}
+    href{}
+    {underline{+91 7702916787}} $  $
+    faIcon{linkedin}
+    href{httpswww.linkedin.cominsunkoji-sri-harshith-328021222}{underline{linkedin.cominsunkoji-sri-harshith}} $  $
+    faIcon{envelope}
+    href{mailtosriharshith2003@gmail.com}
+    {underline{sriharshith2003@gmail.com}}
+end{center}
+section{ABOUT ME}
+ textbf{}{Seeking a challenging career where I can fully use my skills for the success of the organization. To achieve high carrier growth through a continuous learning process and keep myself dynamic and competitive to gain professional skills and knowledge.}
+
+    vspace{-5pt}
+
+
+% -------------------- EDUCATION --------------------
+section{Education}
+  resumeSubHeadingListStart
+  
+    resumeSubheading
+      {VELLORE INSTITUTE OF TECHNOLOGY AP
+CAMPUS}{June 2025}
+      {Integrated M.Tech Software Engineering}{Current CGPA 8.8}
+      
+    resumeSubheading
+      {Sri Chaitanya Techno School}{June 2018}
+      {The Board of Secondary Education, Telangana}{GPA 8.8}
+       resumeSubheading
+      {Sri Chaitanya Junior kalashala}{June 2020}
+      {Intermediate in Mathematics,Physics,Chemistry}{percentage 93.4}
+
+    vspace{-5pt}
+
+  resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+section{Skills}
+ begin{itemize}[leftmargin=0.15in, label={}]
+    small{item{
+    
+     textbf{Languages}{ Java, Python, MYSQL, MongoDB, HTML, CSS, R   } 
+     
+     textbf{Tools}{ GitGitHub, VS Code, IntelliJ, Android Studio,Salesforce}
+     textbf{Relevant Coursework}{ Data Structures and algorithm,Database management system, Software Testing, Data Analysis}
+     % textbf{Frameworks}{ React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} 
+     
+     % textbf{Libraries}{ pandas, NumPy, Matplotlib}
+     
+    }}
+ end{itemize}
+ vspace{-20pt}
+
+% -------------------- PROJECTS --------------------
+section{Projects}
+    resumeSubHeadingListStart
+
+        resumeProjectHeading
+        {textbf{Arduino Based Car Parking System}  footnotesizeemph{}}{2022}
+        resumeItemListStart
+            resumeItem{Involved in the development of the Prototype, 
+            where It helped to receive real-time sensor data from an Arduino and display availability to users for booking}
+                        
+          resumeItemListEnd
+        resumeProjectHeading
+        {textbf{Client Management System}  footnotesizeemph{}}{2023}
+        resumeItemListStart
+            resumeItem{Client Management System is software application which is used to manage a company's interaction with current and potential clients}
+            resumeItem{This Client Management System will reduce the time, energy and money wasted in manually searching the details of the client}
+            resumeItem{It will enable you to draw the details of the client along with jobs allotted or services provided to that particular client with just a single mouse click. }
+          resumeItemListEnd
+          
+    resumeSubHeadingListEnd
+    vspace{-15pt}
+
+% -------------------- EXPERIENCE --------------------
+section{EXPERIENCE AND ACHIEVEMENTS}
+  resumeSubHeadingListStart
+
+          resumeProjectHeading
+          {textbf{SMARTBRIDGE} $$ footnotesizeemph{Salesforce Developer}vspace{8pt}hspace{8pt}href{httpsgithub.comharshith-sunkojicertificateblobmain20mis7027.pdf}{underline{link}}}{May 2023 -- July 2023}
+          {small{CRM APPLICATION FOR SCHOOLS  COLLEGES}}
+          {small{Handling multiple Student, School data manually in register is difficult to manage
+          resumeProjectHeading
+           {textbf{SALESFORCE} $$ footnotesizeemph{Trailhead badges}vspace{8pt}hspace{8pt}href{httpswww.salesforce.comtrailblazers20mis7027}{underline{link}}}{}
+}}
+vspace{-10pt}
+% -------------------- CERTIFICATION --------------------
+subsection{underline{CERTIFICATION}}
+    resumeSubHeadingListStart
+
+          resumeProjectHeading
+          {textbf{Azure AI Fundamentals}vspace{8pt}hspace{8pt}href{httpsgithub.comharshith-sunkojicertificateblobmain20mis7027(a).pdf}{underline{link}}}{July 2023}
+          {small{Microsoft}}
+          vspace{-10pt}
+          resumeProjectHeading
+          {textbf{Microsoft azure cloud computing}vspace{8pt}hspace{8pt}href{httpsgithub.comharshith-sunkojicertificateblobmain20mis7027(a).pdf}{underline{link}}}{May 2023 -- July 2023}
+          {small{Microsoft}}
+          vspace{-10pt}
+          resumeProjectHeading
+          {textbf{Data Science}vspace{8pt}hspace{8pt}
+          href{httpsgithub.comharshith-sunkojicertificatetreemain}{underline{link}}}{July 2023}
+          {small{IBM $$ Cognitive class}}
+          vspace{-10pt}
+          
+
+
+          
+subsection{underline{HOBBIES AND LANGUAGES KNOWN}}
+          
+          resumeProjectHeading
+          {textbf{Hearing Music,Travelling hspace{28pt} Telugufootnotesizeemph{(Native)}, English, Hindi}}
+          
+          
+    resumeSubHeadingListEnd 
+
+end{document}
